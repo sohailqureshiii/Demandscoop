@@ -78,10 +78,10 @@ const About = () => {
       </div>
       <div>
         <p className="third-para-header-at-ijnck">WHY CHOOSE US</p>
-        <h1 className="hone-large-title-fr-hdr-in-main-layout pad-left-for-hdr-in-mob">
+        <h1 className="hone-large-title-fr-hdr-in-main-layout pad-left-for-hdr-in-mob only-center-this-dhr">
           The Right Decision for
         </h1>
-        <h1 className="hone-large-title-fr-hdr-in-main-layout pad-left-for-hdr-in-mob">
+        <h1 className="hone-large-title-fr-hdr-in-main-layout pad-left-for-hdr-in-mob only-center-this-dhr">
           Your Marketing Strategy
         </h1>
       </div>
@@ -90,8 +90,15 @@ const About = () => {
         {" "}
         <div className="flx-section-wihtjd">
           <div className="flx-with-img-and-hdr-and-para">
-            <div className="border-for-backgrnd-img-left">
-              <Image src={TeamsImg} width={50} height={50} alt="Demandscoop" />
+            <div className="flx-fr-im-of-hwye-dis">
+              <div className="border-for-backgrnd-img-left">
+                <Image
+                  src={TeamsImg}
+                  width={50}
+                  height={50}
+                  alt="Demandscoop"
+                />
+              </div>
             </div>
             <div>
               <h5 className="hdr-at-three-section-of-why">Professional Team</h5>
@@ -103,13 +110,15 @@ const About = () => {
             </div>
           </div>
           <div className="flx-with-img-and-hdr-and-para">
-            <div className="border-for-backgrnd-img-left">
-              <Image
-                src={ExperienceImg}
-                width={50}
-                height={50}
-                alt="Demandscoop"
-              />
+            <div className="flx-fr-im-of-hwye-dis">
+              <div className="border-for-backgrnd-img-left">
+                <Image
+                  src={ExperienceImg}
+                  width={50}
+                  height={50}
+                  alt="Demandscoop"
+                />
+              </div>{" "}
             </div>
             <div>
               <h5 className="hdr-at-three-section-of-why">Years Experience</h5>
@@ -122,13 +131,16 @@ const About = () => {
             </div>
           </div>
           <div className="flx-with-img-and-hdr-and-para">
-            <div className="border-for-backgrnd-img-left">
-              <Image
-                src={SuccessImg}
-                width={50}
-                height={50}
-                alt="Demandscoop"
-              />
+            <div className="flx-fr-im-of-hwye-dis">
+              {" "}
+              <div className="border-for-backgrnd-img-left">
+                <Image
+                  src={SuccessImg}
+                  width={50}
+                  height={50}
+                  alt="Demandscoop"
+                />
+              </div>{" "}
             </div>
             <div>
               <h5 className="hdr-at-three-section-of-why">
@@ -144,7 +156,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div style={{ paddingTop: "5em" }}>
+      <div>
         <Footer />
       </div>
     </>

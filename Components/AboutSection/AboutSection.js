@@ -35,6 +35,16 @@ export const AboutSection = () => {
                 Lets Connect
               </button>
             </Link>
+            <div className="display-block-btns-of-call-back-and-contact padobjdsosdv-sk">
+              <Link href="/Contactus">
+                <button
+                  // className="lets-cnt-btn-at-main-layout"
+                  className="lets-connect-atmobile-view-sect"
+                >
+                  Lets Connect
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

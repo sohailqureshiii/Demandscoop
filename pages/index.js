@@ -20,6 +20,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [show, setShow] = useState(false);
+
+  // FAQ----
+  const [faq1, setFaq1] = useState(false);
+  const [faq2, setFaq2] = useState(false);
+  const [faq3, setFaq3] = useState(false);
+  const [faq4, setFaq4] = useState(false);
+  const [faq5, setFaq5] = useState(false);
   return (
     <>
       <div
@@ -86,7 +93,7 @@ export default function Home() {
           </div>
           <Modal visible={show} onClose={() => setShow(false)}></Modal>
           <div className="displayflexat-ns">
-            <div className="header-layout-at-main-section paddinglow-atsdj">
+            <div className="header-layout-at-main-section paddinglow-atsdj margin-btm-at-mobview">
               <p
                 // className="trusted-para-at-hm-main-layout"
                 className="trust-partner-list-at-home-layout"
@@ -459,40 +466,110 @@ export default function Home() {
                 <h2 className="font-for-hedr-faq">FAQ</h2>
               </div>
               <div className="cntr-btwn-lines-at-faq-sec"></div>
-              <div className="flx-fr-faq-questionand-plus">
+              <div
+                className="flx-fr-faq-questionand-plus"
+                onClick={() => setFaq1(!faq1)}
+              >
                 <p className="white-txt-at-faq-sect">
                   Does Square have tools for complex businesses?
                 </p>
                 <p className="white-txt-at-faq-sect extralarge-font">+</p>
               </div>
+              {faq1 ? (
+                <p className="faq-answer-at-faq-sectionsk">
+                  Square has solutions for businesses of all sizes. Our
+                  connected tools are built to scale with future-focused,
+                  connected tools. Enhanced, customer-friendly experiences help
+                  build deeper data and better customer relationships. And our
+                  open platform means you can connect to prebuilt integrations
+                  or build out your own with our APIs. Learn how Square works
+                  with larger, more complex businesses.
+                </p>
+              ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
-              <div className="flx-fr-faq-questionand-plus">
+              <div
+                className="flx-fr-faq-questionand-plus"
+                onClick={() => setFaq2(!faq2)}
+              >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for complex businesses?
+                  How does buy now, pay later work?
                 </p>
                 <p className="white-txt-at-faq-sect extralarge-font">+</p>
               </div>
+              {faq2 ? (
+                <p className="faq-answer-at-faq-sectionsk">
+                  Square has solutions for businesses of all sizes. Our
+                  connected tools are built to scale with future-focused,
+                  connected tools. Enhanced, customer-friendly experiences help
+                  build deeper data and better customer relationships. And our
+                  open platform means you can connect to prebuilt integrations
+                  or build out your own with our APIs. Learn how Square works
+                  with larger, more complex businesses.
+                </p>
+              ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
-              <div className="flx-fr-faq-questionand-plus">
+              <div
+                className="flx-fr-faq-questionand-plus"
+                onClick={() => setFaq3(!faq3)}
+              >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for complex businesses?
+                  What are merchant services?
                 </p>
                 <p className="white-txt-at-faq-sect extralarge-font">+</p>
               </div>
+              {faq3 ? (
+                <p className="faq-answer-at-faq-sectionsk">
+                  Square has solutions for businesses of all sizes. Our
+                  connected tools are built to scale with future-focused,
+                  connected tools. Enhanced, customer-friendly experiences help
+                  build deeper data and better customer relationships. And our
+                  open platform means you can connect to prebuilt integrations
+                  or build out your own with our APIs. Learn how Square works
+                  with larger, more complex businesses.
+                </p>
+              ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
-              <div className="flx-fr-faq-questionand-plus">
+              <div
+                className="flx-fr-faq-questionand-plus"
+                onClick={() => setFaq4(!faq4)}
+              >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for complex businesses?
+                  How does Square compare to other business software providers?
                 </p>
                 <p className="white-txt-at-faq-sect extralarge-font">+</p>
               </div>
+              {faq4 ? (
+                <p className="faq-answer-at-faq-sectionsk">
+                  Square has solutions for businesses of all sizes. Our
+                  connected tools are built to scale with future-focused,
+                  connected tools. Enhanced, customer-friendly experiences help
+                  build deeper data and better customer relationships. And our
+                  open platform means you can connect to prebuilt integrations
+                  or build out your own with our APIs. Learn how Square works
+                  with larger, more complex businesses.
+                </p>
+              ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
-              <div className="flx-fr-faq-questionand-plus">
+              <div
+                className="flx-fr-faq-questionand-plus"
+                onClick={() => setFaq5(!faq5)}
+              >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for complex businesses?
+                  Does Square have tools for professional services businesses?
                 </p>
                 <p className="white-txt-at-faq-sect extralarge-font">+</p>
               </div>
+              {faq5 ? (
+                <p className="faq-answer-at-faq-sectionsk">
+                  Square has solutions for businesses of all sizes. Our
+                  connected tools are built to scale with future-focused,
+                  connected tools. Enhanced, customer-friendly experiences help
+                  build deeper data and better customer relationships. And our
+                  open platform means you can connect to prebuilt integrations
+                  or build out your own with our APIs. Learn how Square works
+                  with larger, more complex businesses.
+                </p>
+              ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
             </div>
           </div>

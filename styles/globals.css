@@ -409,6 +409,15 @@ a {
   padding-top: 25em;
 }
 
+.faq-answer-at-faq-sectionsk {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #fff;
+  width: 50em;
+  line-height: 30px;
+  font-size: 18px;
+}
+
 .font-for-hedr-faq {
   font-weight: 400;
   color: #fff;
@@ -432,7 +441,7 @@ a {
 
 .white-txt-at-faq-sect {
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .extralarge-font {
@@ -762,26 +771,41 @@ a {
 }
 
 .flx-with-img-and-hdr-and-para {
-  display: flex;
+  display: block;
   gap: 25px;
 }
 
 .border-for-backgrnd-img-left {
-  width: 15em;
+  display: flex;
+  justify-content: center;
+}
+.flx-fr-im-of-hwye-dis {
+  display: flex;
+  justify-content: center;
+}
+
+.border-for-backgrnd-img-left {
+  width: 4.5em;
   border-radius: 10px;
   height: 4.5em;
+  margin-bottom: 1em;
   background: #000;
   padding: 10px;
 }
 
 .hdr-at-three-section-of-why {
-  font-size: 18px;
+  letter-spacing: -1px;
+  font-size: 28px;
   font-weight: 600;
+  text-align: center;
 }
 
 .para-at-three-section-of-why-choose-us {
+  line-height: 25px;
   font-size: 15px;
-  padding-top: 5px;
+  font-weight: 500;
+  padding-top: 0.8em;
+  text-align: center;
 }
 
 .flx-section-wihtjd {
@@ -1153,7 +1177,7 @@ button:hover .star-6 {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 6s linear infinite;
 }
 
 @keyframes textclip {
@@ -1280,10 +1304,9 @@ button:hover .star-6 {
 
 .container .card .image {
   position: relative;
-  width: 260px;
+  width: 100%;
   height: 260px;
   top: -20%;
-  left: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
   background: #fff;
@@ -1615,6 +1638,7 @@ button:hover .star-6 {
     margin: 35px 0px;
     padding: 15px;
     font-size: 16px;
+    display: none;
   }
   .display-flx-with-about-dems-andblx {
     display: block;
@@ -1633,7 +1657,7 @@ button:hover .star-6 {
     width: 100%;
   }
   .hdr-aof-htwo-tag-at-about-sec {
-    padding-bottom: 15px;
+    padding: 0px 15px 15px 15px;
     font-size: 46px;
     padding-left: 15px;
     margin-top: 0;
@@ -1693,7 +1717,7 @@ button:hover .star-6 {
   }
   .contain-first-at-home-layout {
     width: 100%;
-    margin: 4em 0em 4em 0em;
+    margin: 2em 0em 4em 0em;
   }
   .third-home-layout-title-at-third-sec-incolor {
     font-size: 42px;
@@ -1807,9 +1831,6 @@ button:hover .star-6 {
   .section-center-at-faq-secjks-a {
     padding-top: 5em;
   }
-  .white-txt-at-faq-sect {
-    font-size: 16px;
-  }
 
   .box-fr- {
     margin-left: -40px;
@@ -1842,7 +1863,7 @@ button:hover .star-6 {
     padding-bottom: 1em;
   }
   .pad-left-for-hdr-in-mob {
-    padding-left: 15px;
+    padding: 0px 15px;
   }
   .flx-with-img-and-hdr-and-para {
     display: block;
@@ -1852,12 +1873,16 @@ button:hover .star-6 {
     display: flex;
     margin-bottom: 15px;
     justify-content: center;
+    margin-bottom: 1em;
   }
   .para-at-three-section-of-why-choose-us {
     line-height: 26px;
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 2em;
+  }
+  .center-layout-at-cont-wid {
+    width: 100%;
   }
 
   .efioefkls-esolk-dsk {
@@ -1959,5 +1984,34 @@ button:hover .star-6 {
   }
   .with-backgrnd-blck {
     margin-top: 10em;
+  }
+
+  .faq-answer-at-faq-sectionsk {
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+
+  .white-txt-at-faq-sect {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .extralarge-font {
+    font-size: 32px;
+  }
+
+  .only-center-this-dhr {
+    text-align: center;
+  }
+  .padobjdsosdv-sk {
+    padding: 15px;
+  }
+
+  .margin-btm-at-mobview {
+    margin-bottom: 1em;
   }
 }
