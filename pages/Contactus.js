@@ -2,10 +2,11 @@ import ContactUsForm from "@/Components/ContactusForm/ContactUsForm";
 import Footer from "@/Components/Footer/footer";
 import HomeNavabr from "@/Components/Navbar/HomePageNavbar";
 import React from "react";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 const Contactus = () => {
   return (
-    <>
+    <div style={myFont.style}>
       <div className="Main-layout-for-dmdscoop-for-contact-us-creen">
         <div className="background-litj-bl-in-front-for-contact-us-creen">
           <HomeNavabr />
@@ -64,7 +65,7 @@ const Contactus = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

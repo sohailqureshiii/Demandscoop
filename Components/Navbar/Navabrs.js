@@ -2,7 +2,8 @@ import Image from "next/image";
 import React from "react";
 // import "./navbar.css";
 import MainLogo from "../../public/DemandscoopMain-logo.png";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../../Fonts/Montserrat-Medium.ttf" });
 const Navabrs = () => {
   return (
     <div className="layout-bx-fr-main-navigation-bx-layout">
@@ -19,7 +20,10 @@ const Navabrs = () => {
           <li className="nav-tabs-links-at-cntr-pd">Contact</li>
         </ul>
         <div>
-          <button className="btn-at-nav-with-cnt-us-redirection-at">
+          <button
+            className="btn-at-nav-with-cnt-us-redirection-at"
+            style={myFont.style}
+          >
             Contact Us
           </button>
         </div>

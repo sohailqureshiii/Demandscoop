@@ -59,9 +59,97 @@ const NavModal = (props) => {
               <Link href="/About">
                 <p className="links-for-mobile-view-innavbar-modla">Why Us</p>
               </Link>
-              <Link href="/About">
-                <p className="links-for-mobile-view-innavbar-modla">Services</p>
+
+              <p className="links-for-mobile-view-innavbar-modla">Services</p>
+              <p
+                className="header-at-drp-dwn-at-navbar white-clroisj"
+                style={{ paddingTop: "15px" }}
+              >
+                Demand Generation
+              </p>
+              <Link href="/Service">
+                <p className="list-of-under-services-at-dropdwn">
+                  Account Based Marketing
+                </p>
               </Link>
+              <Link href="/Service">
+                <p className="list-of-under-services-at-dropdwn">
+                  Content Marketing
+                </p>
+              </Link>
+              <Link href="/Service">
+                <p className="list-of-under-services-at-dropdwn">
+                  Event Promotion
+                </p>
+              </Link>
+              <Link href="/Service">
+                <p className="list-of-under-services-at-dropdwn">
+                  Marketing Qualified Lead (MQL)
+                </p>
+              </Link>
+              <div>
+                <p className="header-at-drp-dwn-at-navbar white-clroisj">
+                  Sales Development
+                </p>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Appointment Generation
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">BANT Lead</p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Confirmed Call Back
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Sales Qualified Lead
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <p className="header-at-drp-dwn-at-navbar white-clroisj">
+                  Database Services
+                </p>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    B2B List Building
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Database Cleansing
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Install Database
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <h5 className="header-at-drp-dwn-at-navbar white-clroisj">
+                  Digital Marketing
+                </h5>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Email Marketing
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    Market Research
+                  </p>
+                </Link>
+                <Link href="/Service">
+                  <p className="list-of-under-services-at-dropdwn">
+                    SEO Services
+                  </p>
+                </Link>
+              </div>
               <Link href="/WhitePapers">
                 <p className="links-for-mobile-view-innavbar-modla">
                   WhitePapers

@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import WhitePaperImg from "../public/whitepapers.png";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 const WhitePapers = () => {
   const WhitePaper = () => {
     return (
@@ -34,7 +35,7 @@ const WhitePapers = () => {
     );
   };
   return (
-    <>
+    <div style={myFont.style}>
       <div className="Main-layout-for-dmdscoop-for-contact-us-creen">
         <div className="background-litj-bl-in-front-for-contact-us-creen">
           <HomeNavabr />
@@ -266,7 +267,7 @@ const WhitePapers = () => {
       <div style={{ paddingTop: "6em" }}>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -6,10 +6,11 @@ import ExperienceImg from "../public/quality.svg";
 import SuccessImg from "../public/growth.svg";
 import Image from "next/image";
 import React from "react";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 const About = () => {
   return (
-    <>
+    <div style={myFont.style}>
       <div>
         <div>
           <HomeNavabr />
@@ -147,7 +148,7 @@ const About = () => {
                 Success Guaranteed
               </h5>
               <p className="para-at-three-section-of-why-choose-us">
-                We at DemandEye help you undertake your marketing and sales
+                We at DemandScoop help you undertake your marketing and sales
                 initiatives by recognising your buyers’ persona and their
                 intentions to purchase. That's why we have a recurring business
                 ratio of 96.8%
@@ -159,7 +160,7 @@ const About = () => {
       <div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

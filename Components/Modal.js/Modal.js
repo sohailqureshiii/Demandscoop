@@ -2,7 +2,8 @@ import React from "react";
 import ContactUsForm from "../ContactusForm/ContactUsForm";
 import ContactImg from "../../public/logo-demand.jpeg";
 import Image from "next/image";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../../Fonts/Montserrat-Medium.ttf" });
 const Modal = (props) => {
   if (!props.visible) {
     return null;
@@ -10,7 +11,7 @@ const Modal = (props) => {
 
   return (
     <>
-      <div className="modalFixedBg">
+      <div className="modalFixedBg" style={myFont.style}>
         <div style={{ position: "relative" }}>
           <div className="demandscoop-navbr-main-pop-up-container">
             <div className="flx-in-xenter-div-container-of-modal">
@@ -41,7 +42,7 @@ const Modal = (props) => {
                       </metadata>
                       <g
                         transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                        fill="#fff"
+                        fill="#000"
                         stroke="none"
                       >
                         <path
@@ -88,9 +89,9 @@ const Modal = (props) => {
                           className="input-sect-for-modla-only-atsd"
                         >
                           <option>Demand Generation</option>
-                          <option>Demand Generation</option>
-                          <option>Demand Generation</option>
-                          <option>Other</option>
+                          <option>Sales Development</option>
+                          <option>Database Services</option>
+                          <option>Digital MArketing</option>
                         </select>
                       </div>
                     </div>
@@ -101,7 +102,10 @@ const Modal = (props) => {
                       />{" "}
                     </div>
                     <div className="flx-in-modal-insputs-at-sections-j">
-                      <button className="submit-btn-at-modal-form">
+                      <button
+                        style={myFont.style}
+                        className="submit-btn-at-modal-form"
+                      >
                         Submit
                       </button>
                     </div>

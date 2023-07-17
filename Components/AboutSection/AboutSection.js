@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../../Fonts/Montserrat-Medium.ttf" });
 export const AboutSection = () => {
   return (
     <div className="displayflexat-ns with-backgrnd-blck">
@@ -19,17 +20,18 @@ export const AboutSection = () => {
               solutions, your business can reach the pinnacle of success.
             </p>
             <p className="para-at-about-sec-of-home-paly">
-              With our 20+ years of rich experience, DemandEye bridges the gap
+              With our 20+ years of rich experience, DemandScoop bridges the gap
               between the demand for quality leads and delivering the best leads
               to your enterprise. Our experience in the B2B arena has helped us
               collaborate with clients and deliver high-quality data, metrics,
-              and analytics that drives value and satisfaction. DemandEye goes
+              and analytics that drives value and satisfaction. DemandScoop goes
               the distance in giving its clients what they rightly
               deserve—unparalleled and sales-focused services.
             </p>
             <Link href="/Contactus">
               <button
                 // className="lets-cnt-btn-at-main-layout"
+                style={myFont.style}
                 className="contac-us-page-btn-cta-sjm margin-noleft"
               >
                 Lets Connect
@@ -38,6 +40,7 @@ export const AboutSection = () => {
             <div className="display-block-btns-of-call-back-and-contact padobjdsosdv-sk">
               <Link href="/Contactus">
                 <button
+                  style={myFont.style}
                   // className="lets-cnt-btn-at-main-layout"
                   className="lets-connect-atmobile-view-sect"
                 >

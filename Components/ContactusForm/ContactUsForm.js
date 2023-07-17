@@ -1,5 +1,7 @@
 import React from "react";
 import { Input } from "../Input/Input";
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../../Fonts/Montserrat-Medium.ttf" });
 
 const ContactUsForm = () => {
   return (
@@ -25,7 +27,12 @@ const ContactUsForm = () => {
           <div className="container-for-inputs">
             <Input title="Job Title" placeholder="" />
           </div>
-          <button className="btn-for-submit-at-contact-screen">Submit</button>
+          <button
+            style={myFont.style}
+            className="btn-for-submit-at-contact-screen"
+          >
+            Submit
+          </button>
           <p className="terms-and-privacy-text-ahdjsn">
             By submitting this form, you are agreeing to Demandscoop's
             <br /> Privacy Policy and Terms of Service.

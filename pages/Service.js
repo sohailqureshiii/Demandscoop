@@ -3,10 +3,11 @@ import Footer from "@/Components/Footer/footer";
 import HomeNavabr from "@/Components/Navbar/HomePageNavbar";
 import Link from "next/link";
 import React from "react";
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 const Service = () => {
   return (
-    <>
+    <div style={myFont.style}>
       <div className="Main-layout-for-dmdscoop-for-contact-us-creen">
         <div className="background-litj-bl-in-front-for-contact-us-creen">
           <HomeNavabr />
@@ -252,7 +253,7 @@ const Service = () => {
       <div className="pad-top-low">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

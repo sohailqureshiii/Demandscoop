@@ -15,9 +15,12 @@ import { AboutSection } from "@/Components/AboutSection/AboutSection";
 import Modal from "@/Components/Modal.js/Modal";
 import { useState } from "react";
 import Link from "next/link";
+import { Open_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
-
+// const inter = Inter({ subsets: ["latin"] });
+// const openSans = Open_Sans({ subsets: ["latin"] });
+const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 export default function Home() {
   const [show, setShow] = useState(false);
 
@@ -29,8 +32,12 @@ export default function Home() {
   const [faq5, setFaq5] = useState(false);
   return (
     <>
+      <Head></Head>
       <div
+        // style={openSans.style}
+        style={myFont.style}
         // className="Main-layout-for-dmdscoop"
+
         className="main-without--backfround"
       >
         <div
@@ -60,6 +67,7 @@ export default function Home() {
                   //  className="lets-cnt-btn-at-main-layout"
                   className="get-a-call-back-cta-at-home-page-layout"
                   onClick={() => setShow(true)}
+                  style={myFont.style}
                 >
                   Get a callback
                 </button>
@@ -67,6 +75,7 @@ export default function Home() {
                   <button
                     // className="lets-cnt-btn-at-main-layout"
                     className="contac-us-page-btn-cta-sjm"
+                    style={myFont.style}
                   >
                     Lets Connect
                   </button>
@@ -77,6 +86,7 @@ export default function Home() {
                   //  className="lets-cnt-btn-at-main-layout"
                   className="mobile-view-age-talcjks"
                   onClick={() => setShow(true)}
+                  style={myFont.style}
                 >
                   Get a callback
                 </button>
@@ -84,6 +94,7 @@ export default function Home() {
                   <button
                     // className="lets-cnt-btn-at-main-layout"
                     className="lets-connect-atmobile-view-sect"
+                    style={myFont.style}
                   >
                     Lets Connect
                   </button>
@@ -159,9 +170,11 @@ export default function Home() {
                     Assisted 15 media agencies across the globe in executing
                     their marketing campaigns
                   </h4>
-                  <p className="get-start-btn-at-btm blueclr-of-fnt-get-strd">
-                    Get Started
-                  </p>
+                  <Link href="/Contactus">
+                    <p className="get-start-btn-at-btm blueclr-of-fnt-get-strd">
+                      Get Started
+                    </p>
+                  </Link>
                 </div>
                 <div className="contain-first-at-home-layout">
                   <div className="colour-full-backgrounds-at-sec next-at-box"></div>
@@ -176,9 +189,11 @@ export default function Home() {
                   <h4 className="inter-header-sect-at-homme-box-plya">
                     Obtained more than 93% repeat business for a job well done
                   </h4>
-                  <p className="get-start-btn-at-btm difffclr-of-fnt-get-strd">
-                    Get Started
-                  </p>
+                  <Link href="/Contactus">
+                    <p className="get-start-btn-at-btm difffclr-of-fnt-get-strd">
+                      Get Started
+                    </p>
+                  </Link>
                 </div>
                 <div className="contain-first-at-home-layout">
                   <div className="colour-full-backgrounds-at-sec third-color-at-box"></div>
@@ -194,9 +209,11 @@ export default function Home() {
                     Helped 24 technology enterprises with their sales and
                     marketing strategies
                   </h4>
-                  <p className="get-start-btn-at-btm pinksibkclr-of-fnt-get-strd">
-                    Get Started
-                  </p>
+                  <Link href="/Contactus">
+                    <p className="get-start-btn-at-btm pinksibkclr-of-fnt-get-strd">
+                      Get Started
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -212,13 +229,22 @@ export default function Home() {
               {/* -----------------  */}
               <div className="displayflexat-ns">
                 <div className="displayflexat-ns">
-                  <button className="Btn-at-service-sec-in-hm-main-layout left-radious">
+                  <button
+                    style={myFont.style}
+                    className="Btn-at-service-sec-in-hm-main-layout left-radious"
+                  >
                     Demand Generation
                   </button>
-                  <button className="Btn-at-service-sec-in-hm-main-layout">
+                  <button
+                    style={myFont.style}
+                    className="Btn-at-service-sec-in-hm-main-layout"
+                  >
                     Sales Development
                   </button>
-                  <button className="Btn-at-service-sec-in-hm-main-layout">
+                  <button
+                    style={myFont.style}
+                    className="Btn-at-service-sec-in-hm-main-layout"
+                  >
                     Digital Marketing
                   </button>
                 </div>
@@ -240,6 +266,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -267,6 +294,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -294,6 +322,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -323,6 +352,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -350,6 +380,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -377,6 +408,7 @@ export default function Home() {
                           <p>
                             <Link href="/Contactus">
                               <button
+                                style={myFont.style}
                                 // className="lets-cnt-btn-at-main-layout"
                                 // className="contac-us-page-btn-cta-sjm"
                                 className="btn-fr-get-started-at-animated-bx"
@@ -436,21 +468,23 @@ export default function Home() {
                   We’re here to help. If you need a hand <br />
                   switching from your current solution, have
                   <br />
-                  questions about why Square is right for your
-                  <br />
-                  business, or want support getting started,
+                  questions about why Demandscoop is right for your business, or
+                  want support getting started,
                   <br />
                   please talk to a member of our team.
                   <br />
                 </p>
                 <p className="display-at-mobile-section-only-in-sbjfs">
                   We’re here to help. If you need a hand. switching from your
-                  current solution, have questions about why Square is right for
-                  your business, or want support getting started, please talk to
-                  a member of our team.
+                  current solution, have questions about why Demandscoop is
+                  right for your business, or want support getting started,
+                  please talk to a member of our team.
                 </p>
                 <Link href="/Contactus">
-                  <button className="Btn-fr-cntc-us-sect-cntc-us">
+                  <button
+                    className="Btn-fr-cntc-us-sect-cntc-us"
+                    style={myFont.style}
+                  >
                     Contact Us
                   </button>
                 </Link>
@@ -471,19 +505,23 @@ export default function Home() {
                 onClick={() => setFaq1(!faq1)}
               >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for complex businesses?
+                  Does Demandscoop have tools for complex businesses?
                 </p>
-                <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                {faq1 ? (
+                  <p className="white-txt-at-faq-sect extralarge-font">-</p>
+                ) : (
+                  <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                )}
               </div>
               {faq1 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Square has solutions for businesses of all sizes. Our
+                  Demandscoop has solutions for businesses of all sizes. Our
                   connected tools are built to scale with future-focused,
                   connected tools. Enhanced, customer-friendly experiences help
                   build deeper data and better customer relationships. And our
                   open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Square works
-                  with larger, more complex businesses.
+                  or build out your own with our APIs. Learn how Demandscoop
+                  works with larger, more complex businesses.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -494,17 +532,21 @@ export default function Home() {
                 <p className="white-txt-at-faq-sect">
                   How does buy now, pay later work?
                 </p>
-                <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                {faq2 ? (
+                  <p className="white-txt-at-faq-sect extralarge-font">-</p>
+                ) : (
+                  <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                )}
               </div>
               {faq2 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Square has solutions for businesses of all sizes. Our
+                  Demandscoop has solutions for businesses of all sizes. Our
                   connected tools are built to scale with future-focused,
                   connected tools. Enhanced, customer-friendly experiences help
                   build deeper data and better customer relationships. And our
                   open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Square works
-                  with larger, more complex businesses.
+                  or build out your own with our APIs. Learn how Demandscoop
+                  works with larger, more complex businesses.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -515,17 +557,21 @@ export default function Home() {
                 <p className="white-txt-at-faq-sect">
                   What are merchant services?
                 </p>
-                <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                {faq3 ? (
+                  <p className="white-txt-at-faq-sect extralarge-font">-</p>
+                ) : (
+                  <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                )}
               </div>
               {faq3 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Square has solutions for businesses of all sizes. Our
+                  Demandscoop has solutions for businesses of all sizes. Our
                   connected tools are built to scale with future-focused,
                   connected tools. Enhanced, customer-friendly experiences help
                   build deeper data and better customer relationships. And our
                   open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Square works
-                  with larger, more complex businesses.
+                  or build out your own with our APIs. Learn how Demandscoop
+                  works with larger, more complex businesses.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -534,19 +580,24 @@ export default function Home() {
                 onClick={() => setFaq4(!faq4)}
               >
                 <p className="white-txt-at-faq-sect">
-                  How does Square compare to other business software providers?
+                  How does Demandscoop compare to other business software
+                  providers?
                 </p>
-                <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                {faq4 ? (
+                  <p className="white-txt-at-faq-sect extralarge-font">-</p>
+                ) : (
+                  <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                )}
               </div>
               {faq4 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Square has solutions for businesses of all sizes. Our
+                  Demandscoop has solutions for businesses of all sizes. Our
                   connected tools are built to scale with future-focused,
                   connected tools. Enhanced, customer-friendly experiences help
                   build deeper data and better customer relationships. And our
                   open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Square works
-                  with larger, more complex businesses.
+                  or build out your own with our APIs. Learn how Demandscoop
+                  works with larger, more complex businesses.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -555,19 +606,24 @@ export default function Home() {
                 onClick={() => setFaq5(!faq5)}
               >
                 <p className="white-txt-at-faq-sect">
-                  Does Square have tools for professional services businesses?
+                  Does Demandscoop have tools for professional services
+                  businesses?
                 </p>
-                <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                {faq5 ? (
+                  <p className="white-txt-at-faq-sect extralarge-font">-</p>
+                ) : (
+                  <p className="white-txt-at-faq-sect extralarge-font">+</p>
+                )}
               </div>
               {faq5 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Square has solutions for businesses of all sizes. Our
+                  Demandscoop has solutions for businesses of all sizes. Our
                   connected tools are built to scale with future-focused,
                   connected tools. Enhanced, customer-friendly experiences help
                   build deeper data and better customer relationships. And our
                   open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Square works
-                  with larger, more complex businesses.
+                  or build out your own with our APIs. Learn how Demandscoop
+                  works with larger, more complex businesses.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
