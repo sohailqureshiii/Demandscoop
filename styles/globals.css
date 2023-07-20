@@ -192,7 +192,7 @@ a {
 }
 
 .inter-header-sect-at-homme-box-plya {
-  font-size: 22px;
+  font-size: 20px;
   padding: 25px 35px 30px 35px;
   font-weight: 600;
 }
@@ -1138,13 +1138,14 @@ button:hover .star-6 {
 } */
 
 .animate-charcter {
-  background-image: linear-gradient(
+  background: linear-gradient(
     -225deg,
-    #231557 0%,
+    #231557,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #fff800
   );
+  animation: gradient 5s ease infinite;
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -1153,12 +1154,24 @@ button:hover .star-6 {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 6s linear infinite;
+  /* animation: textclip 6s linear infinite; */
 }
 
-@keyframes textclip {
+/* @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+} */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -1574,6 +1587,42 @@ button:hover .star-6 {
   border-top: 1px solid #ffffff38;
 }
 
+/* --------------- Client Trusted _------  */
+
+.slider {
+  height: 160px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  /* width: calc(250px * 18); */
+  overflow: hidden;
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
 /* -------    Style starts for Responsive -----------  */
 @media (min-width: 320px) and (max-width: 426px) {
   .layout-box-fr-navigation-sub-bx {
@@ -1594,7 +1643,7 @@ button:hover .star-6 {
     text-align: left;
     line-height: 65px;
     letter-spacing: -4px;
-    font-size: 64px;
+    font-size: 60px;
   }
   .para-secound-heaser-at-home-page-layout {
     color: #666;
@@ -1633,7 +1682,7 @@ button:hover .star-6 {
   }
   .hdr-aof-htwo-tag-at-about-sec {
     padding: 0px 15px 15px 15px;
-    font-size: 44px;
+    font-size: 42px;
     padding-left: 15px;
     margin-top: 0;
     text-align: left;
@@ -1817,6 +1866,7 @@ button:hover .star-6 {
   }
   .flx-cntrkjsj {
     padding: 15px;
+    margin-top: 0em;
   }
 
   .hone-large-title-fr-hdr-in-main-layout {
@@ -1952,7 +2002,7 @@ button:hover .star-6 {
   .conatainers-for-white-papers-at-section {
     width: 100%;
     margin-bottom: 2em;
-    padding: 1.3em;
+    padding: 0.8em;
   }
 
   .para-at-white-paper-cnt {
@@ -1965,7 +2015,7 @@ button:hover .star-6 {
     display: block;
   }
   .with-backgrnd-blck {
-    margin-top: 11em;
+    margin-top: 16.8em;
   }
 
   .faq-answer-at-faq-sectionsk {
@@ -2056,6 +2106,14 @@ button:hover .star-6 {
 
   .white-clroisj {
     color: #fff;
+  }
+
+  .slide {
+    height: 100%;
+  }
+
+  .slider {
+    height: 110px;
   }
 }
 
@@ -2158,3 +2216,28 @@ button:hover .star-6 {
   color: rgba(255, 255, 255, 0.664);
   cursor: pointer;
 }
+
+/* .slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotatez(180deg);
+} */

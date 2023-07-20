@@ -17,6 +17,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import { Slider } from "@/Components/SliderofPartners/Slider";
 
 // const inter = Inter({ subsets: ["latin"] });
 // const openSans = Open_Sans({ subsets: ["latin"] });
@@ -103,6 +104,8 @@ export default function Home() {
             </div>
           </div>
           <Modal visible={show} onClose={() => setShow(false)}></Modal>
+
+          <Slider />
           <div className="displayflexat-ns">
             <div className="header-layout-at-main-section paddinglow-atsdj margin-btm-at-mobview">
               <p
