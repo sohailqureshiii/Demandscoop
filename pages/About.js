@@ -8,7 +8,12 @@ import Image from "next/image";
 import React from "react";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
+import { CountUp } from "use-count-up";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
+  AOS.init();
   return (
     <div style={myFont.style}>
       <div>
@@ -53,32 +58,45 @@ const About = () => {
           </div>
         </div>
       </div> */}
+
       <div
         className="Counts-section-container-at-home-layout"
         style={{ marginTop: "0" }}
       >
         <div className="container-for-sinlge-count-ahome-layout">
-          <h2 className="counts-of-new-hdr-sfs">1,387,536</h2>
+          <h2 className="counts-of-new-hdr-sfs">
+            <CountUp isCounting end={1387536} duration={3.2} />
+          </h2>
           <p className="para-at-count-at-about">Leads Generated</p>
         </div>
         <div className="container-for-sinlge-count-ahome-layout">
-          <h2 className="counts-of-new-hdr-sfs">7,526</h2>
+          <h2 className="counts-of-new-hdr-sfs" data-val="7,526">
+            <CountUp isCounting end={7526} duration={3.2} />
+          </h2>
           <p className="para-at-count-at-about">Campaigns Launched</p>
         </div>
         <div className="container-for-sinlge-count-ahome-layout">
-          <h2 className="counts-of-new-hdr-sfs">60M</h2>
+          <h2 className="counts-of-new-hdr-sfs" data-val="M">
+            <CountUp isCounting end={60} duration={3.2} />M
+          </h2>
           <p className="para-at-count-at-about">Audience Reached</p>
         </div>
         <div className="container-for-sinlge-count-ahome-layout no-border-at-right">
-          <h2 className="counts-of-new-hdr-sfs">97.6%</h2>
+          <h2 className="counts-of-new-hdr-sfs">
+            {" "}
+            <CountUp isCounting end={97.6} duration={3.2} />%
+          </h2>
           <p className="para-at-count-at-about">Client Satisfaction</p>
         </div>
       </div>
+
       <div>
         <AboutSection />
       </div>
       <div>
-        <p className="third-para-header-at-ijnck">WHY CHOOSE US</p>
+        <p className="third-para-header-at-ijnck" data-aos="fade-up">
+          WHY CHOOSE US
+        </p>
         <h1 className="hone-large-title-fr-hdr-in-main-layout pad-left-for-hdr-in-mob only-center-this-dhr">
           The Right Decision for
         </h1>

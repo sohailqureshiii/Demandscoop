@@ -18,6 +18,7 @@ import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { Slider } from "@/Components/SliderofPartners/Slider";
+import { CountUp } from "use-count-up";
 
 // const inter = Inter({ subsets: ["latin"] });
 // const openSans = Open_Sans({ subsets: ["latin"] });
@@ -31,9 +32,15 @@ export default function Home() {
   const [faq3, setFaq3] = useState(false);
   const [faq4, setFaq4] = useState(false);
   const [faq5, setFaq5] = useState(false);
+
   return (
     <>
-      <Head></Head>
+      {/* <Head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
+      </Head> */}
+
       <div
         // style={openSans.style}
         style={myFont.style}
@@ -104,9 +111,8 @@ export default function Home() {
             </div>
           </div>
           <Modal visible={show} onClose={() => setShow(false)}></Modal>
-
           <Slider />
-          <div className="displayflexat-ns">
+          {/* <div className="displayflexat-ns">
             <div className="header-layout-at-main-section paddinglow-atsdj margin-btm-at-mobview">
               <p
                 // className="trusted-para-at-hm-main-layout"
@@ -141,8 +147,9 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
+
         <>
           <AboutSection />
         </>
@@ -440,21 +447,31 @@ export default function Home() {
               target accounts.
             </p>
           </div>
+
           <div className="Counts-section-container-at-home-layout">
             <div className="container-for-sinlge-count-ahome-layout">
-              <h2 className="counts-of-new-hdr-sfs">1,387,536</h2>
+              <h2 className="counts-of-new-hdr-sfs">
+                <CountUp isCounting end={1387536} duration={3.2} />
+              </h2>
               <p className="para-at-count-at-about">Leads Generated</p>
             </div>
             <div className="container-for-sinlge-count-ahome-layout">
-              <h2 className="counts-of-new-hdr-sfs">7,526</h2>
+              <h2 className="counts-of-new-hdr-sfs" data-val="7,526">
+                <CountUp isCounting end={7526} duration={3.2} />
+              </h2>
               <p className="para-at-count-at-about">Campaigns Launched</p>
             </div>
             <div className="container-for-sinlge-count-ahome-layout">
-              <h2 className="counts-of-new-hdr-sfs">60M</h2>
+              <h2 className="counts-of-new-hdr-sfs" data-val="M">
+                <CountUp isCounting end={60} duration={3.2} />M
+              </h2>
               <p className="para-at-count-at-about">Audience Reached</p>
             </div>
             <div className="container-for-sinlge-count-ahome-layout no-border-at-right">
-              <h2 className="counts-of-new-hdr-sfs">97.6%</h2>
+              <h2 className="counts-of-new-hdr-sfs">
+                {" "}
+                <CountUp isCounting end={97.6} duration={3.2} />%
+              </h2>
               <p className="para-at-count-at-about">Client Satisfaction</p>
             </div>
           </div>

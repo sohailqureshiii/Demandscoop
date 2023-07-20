@@ -1591,9 +1591,8 @@ button:hover .star-6 {
 
 .slider {
   height: 160px;
-  margin: auto;
   position: relative;
-  width: 90%;
+  width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -2241,3 +2240,19 @@ button:hover .star-6 {
   top: 0;
   transform: rotatez(180deg);
 } */
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  overflow-x: none;
+}
+::-webkit-scrollbar-track {
+  /* border-radius: 5px; */
+  background: #fff;
+  /* margin-block: 0.25em; */
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  /* background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, #00c6ff, #0072ff); */
+  /* border-radius: 0.3em; */
+}
