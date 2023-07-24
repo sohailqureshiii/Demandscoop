@@ -9,11 +9,8 @@ import React from "react";
 import localFont from "next/font/local";
 const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
 import { CountUp } from "use-count-up";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
-  AOS.init();
   return (
     <div style={myFont.style}>
       <div>

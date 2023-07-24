@@ -1564,6 +1564,62 @@ button:hover .star-6 {
   z-index: 101;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.419);
   overflow-x: scroll;
+  -webkit-animation: conditionalOpen 1s normal forwards ease-in-out;
+  -moz-animation: conditionalOpen 1s normal forwards ease-in-out;
+  animation: conditionalOpen 1s normal forwards ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+@-webkit-keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@-moz-keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
 }
 
 .flx-in-logo-and-links-of-pages {
@@ -2143,6 +2199,12 @@ button:hover .star-6 {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
   border-radius: 2px;
+  -webkit-animation: conditionalOpen 1s normal forwards ease-in-out;
+  -moz-animation: conditionalOpen 1s normal forwards ease-in-out;
+  animation: conditionalOpen 1s normal forwards ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
 }
 
 .headerDropdownContainer:hover .dropdown {
@@ -2256,3 +2318,5 @@ button:hover .star-6 {
   background: linear-gradient(to right, #00c6ff, #0072ff); */
   /* border-radius: 0.3em; */
 }
+
+/* --------------- Modal------- Transition ------  */
