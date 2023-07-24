@@ -40,13 +40,13 @@ const HomeNavabr = () => {
               <Link href="/About"> Why Us</Link>
             </li>
             <li className="Inactive-nav-tabs-links-at-Homescreen">
-              <DropdownMenu menu={<Link href="/Contactus">Services</Link>}>
+              <DropdownMenu menu={<Link href="/Service">Services</Link>}>
                 <div className="internal-box-for-drop-down-in-navbar">
                   <div>
                     <h5 className="header-at-drp-dwn-at-navbar">
                       Demand Generation
                     </h5>
-                    <Link href="/Service">
+                    <Link href="/service/account-based-marketing">
                       <p className="list-of-under-services-at-dropdwn">
                         Account Based Marketing
                       </p>
