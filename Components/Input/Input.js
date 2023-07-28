@@ -8,6 +8,9 @@ export const Input = (props) => {
         className="Input-for-contact-andother-compo"
         type="text"
         placeholder={props.placeholder}
+        value={props.message}
+        onChange={props.onChange}
+        onBlur={props.onBlur}
       />
     </>
   );
