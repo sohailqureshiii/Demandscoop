@@ -391,6 +391,12 @@ a {
   width: 50em;
   line-height: 30px;
   font-size: 18px;
+  -webkit-animation: conditionalOpen 1s normal forwards ease-in-out;
+  -moz-animation: conditionalOpen 1s normal forwards ease-in-out;
+  animation: conditionalOpen 1s normal forwards ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
 }
 
 .font-for-hedr-faq {
@@ -430,11 +436,19 @@ a {
   background: #000;
   color: #fff;
   height: 100%;
+  padding-top: 4em;
+}
+
+.no-padd-sdkfn {
+  padding-top: 0em;
 }
 .black-bkrnd-for-foooter {
-  background: #000;
+  background: #5b5959;
   color: #fff;
+  display: flex;
   width: 80em;
+  justify-content: space-around;
+  padding: 20px 0px;
 }
 .flx-for-ftr-bc {
   display: flex;
@@ -461,8 +475,9 @@ a {
 }
 
 .service-header-at-footer-section {
-  padding-bottom: 30px;
-  color: rgb(255 255 255 / 40%);
+  padding-bottom: 25px;
+  color: rgb(255 255 255 / 74%);
+  font-size: 24px;
 }
 
 .secound-her-hthree-hdr-at-footer {
@@ -472,6 +487,9 @@ a {
 .services-and-other-kinks-at-footer {
   padding-bottom: 10px;
   cursor: pointer;
+  line-height: 28px;
+  width: 15em;
+  font-size: 15px;
 }
 
 .pad-top-fr-match-logo {
@@ -487,10 +505,50 @@ a {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 30em;
 }
 
+.flx-in-for-footer-section-sr-top {
+  display: flex;
+  justify-content: center;
+}
+
+.gap-in-prosodn {
+  gap: 1em;
+}
+
+.border-for-footer-bottom-section {
+  border-radius: 5px;
+  width: 80em;
+  height: 1px;
+  background: #fff;
+  margin-top: 2em;
+}
+
+.low-oadding-at-footer-section {
+  padding-top: 1em;
+}
+
+.flx-in-wirsikd-djk {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.flx-for-img-and-office-country {
+  display: flex;
+  gap: 15px;
+}
+
+.dis-flx-in-last-end-compo-sectio-sk {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+  padding: 2em 0em;
+  justify-content: center;
+}
 /* ----------------------------- Contact Us Screen ------------------------- */
 
 .Main-layout-for-dmdscoop-for-contact-us-creen {
@@ -1855,6 +1913,9 @@ button:hover .star-6 {
   }
   .black-bkrnd-for-foooter {
     width: 100%;
+    display: block;
+    padding: 14px;
+    font-size: 14px;
   }
   .line-btwn-about-and-dhdr {
     display: none;
@@ -2070,7 +2131,7 @@ button:hover .star-6 {
     display: block;
   }
   .with-backgrnd-blck {
-    margin-top: 16.8em;
+    margin-top: 9.8em;
   }
 
   .faq-answer-at-faq-sectionsk {
@@ -2084,8 +2145,8 @@ button:hover .star-6 {
   }
 
   .white-txt-at-faq-sect {
-    line-height: 35px;
-    font-size: 22px;
+    line-height: 22px;
+    font-size: 16px;
   }
   .extralarge-font {
     font-size: 32px;
@@ -2169,6 +2230,21 @@ button:hover .star-6 {
 
   .slider {
     height: 110px;
+  }
+
+  .services-and-other-kinks-at-footer {
+    width: 100%;
+  }
+
+  .dis-flx-in-last-end-compo-sectio-sk {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 2em 15px;
+  }
+  .end-text-for-website-deamnd {
+    width: 100%;
   }
 }
 

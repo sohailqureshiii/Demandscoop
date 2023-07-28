@@ -19,7 +19,7 @@ const Contactus = () => {
                 <p className="para-at-contact-us-screen-layout">
                   We’re here to help! Fill out our form to reach our
                   <br />
-                  team or call us at +1 866-904-9666.
+                  team or call us at +1
                 </p>
               </div>
               <ContactUsForm />
