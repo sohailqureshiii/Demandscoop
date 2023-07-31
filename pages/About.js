@@ -22,40 +22,19 @@ const About = () => {
                 We are in the business of
               </h1>
               <h1 className="hone-large-title-fr-hdr-in-main-layout">
-                building entrepreneurs.
+                Seamless B2B Solutions
               </h1>
               <p className="para-at-main-layout-atnew-sec">
-                Get the B2B data and software you need to connect with and close
-                your most valuable buyers — all in one operating system.
+                Choose our B2B services for expert lead generation, tailored
+                solutions, and exceptional results. We drive growth, increase
+                ROI, and deliver outstanding value. Partner with us for a
+                thriving business.
               </p>
               <p className="third-para-header-at-ijnck">ACHIEVEMENTS</p>
             </div>
           </div>
         </div>
-      </div>
-      {/* <div className="flx-fr-center-layout-at-cnt  pad-top-low">
-        <div className="widtgh-fr-dms-center-layout">
-          <div className="contatciner-for-counts-gradient-background">
-            <div className="container-for-sinlge-count">
-              <h2 className="hedr-of-count-at-about">1,387,536</h2>
-              <p className="para-at-count-at-about">Leads Generated</p>
-            </div>
-            <div className="container-for-sinlge-count">
-              <h2 className="hedr-of-count-at-about">7,526</h2>
-              <p className="para-at-count-at-about">Campaigns Launched</p>
-            </div>
-            <div className="container-for-sinlge-count">
-              <h2 className="hedr-of-count-at-about">60M</h2>
-              <p className="para-at-count-at-about">Audience Reached</p>
-            </div>
-            <div className="container-for-sinlge-count no-border-at-right">
-              <h2 className="hedr-of-count-at-about">97.6%</h2>
-              <p className="para-at-count-at-about">Client Satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+      </div>{" "}
       <div
         className="Counts-section-container-at-home-layout"
         style={{ marginTop: "0" }}
@@ -86,8 +65,7 @@ const About = () => {
           <p className="para-at-count-at-about">Client Satisfaction</p>
         </div>
       </div>
-
-      <div>
+      <div className="top-minus-padd-in-mobile-view">
         <AboutSection />
       </div>
       <div>
@@ -101,7 +79,6 @@ const About = () => {
           Your Marketing Strategy
         </h1>
       </div>
-
       <div className="efioefkls-esolk-dsk ">
         {" "}
         <div className="flx-section-wihtjd">

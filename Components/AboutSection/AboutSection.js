@@ -13,7 +13,7 @@ export const AboutSection = () => {
           </div>
           <div className="width-for-left-section-at-sjk">
             <h2 className="hdr-aof-htwo-tag-at-about-sec">
-              Engaging More, Refreshing Result
+              Unveiling Our Story and Vision
             </h2>
             <p className="para-at-about-sec-of-home-paly">
               The search for quality leads is never-ending, but with the right

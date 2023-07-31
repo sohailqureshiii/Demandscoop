@@ -59,16 +59,17 @@ export default function Home() {
                 //  className="hone-large-title-fr-hdr-in-main-layout animate-charcter"
                 className="Main-first-header-at-home-screeen-h-one-tag animate-charcter"
               >
-                It’s Our Business to
+                Your Success, Our Expertise
                 <br />
-                Grow Yours.
+                Unstoppable Growth.
               </h1>
               <p
                 //  className="para-at-main-layout-atnew-sec"
                 className="para-secound-heaser-at-home-page-layout"
               >
-                Get the B2B data and software you need to connect with and close
-                your most valuable buyers — all in one operating system.
+                Acquire the essential B2B data and software, enabling seamless
+                connections and conversions with your most valuable prospects,
+                all integrated within a single operating system.
               </p>
               <div className="displayflexat-ns disapalu-none-at-mobile-setion">
                 <button
@@ -160,8 +161,9 @@ export default function Home() {
             </h2>
             <div className="displayflexat-ns">
               <p className="para-at-secound-para-layout">
-                Get the B2B data and software you need to connect with and close
-                your most valuable buyers — all in one operating system.
+                At Demanscoop we stand out from other B2B lead generation
+                companies with our unparalleled expertise, data-driven
+                strategies, and exceptional ROI-focused results.
               </p>
             </div>
             <div>
@@ -234,7 +236,7 @@ export default function Home() {
             {/* -----------------  */}
             <div className="background-litj-bl-in-front-service-section">
               <h2 className="third-home-layout-title-at-third-sec-incolor">
-                Choose your Service
+                Your Best Choice!
               </h2>
               {/* -----------------  */}
               <div className="displayflexat-ns">
@@ -269,9 +271,8 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            Account Based Marketing: Personalized, Profitable,
+                            Powerful
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -297,9 +298,7 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            A powerful strategy for B2B success.
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -325,9 +324,8 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            Unlock the potential of your events with strategic
+                            event promotion!
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -355,9 +353,8 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            Generating appointments are never easy. We achieved
+                            the end goal by adopting multiple strategies.
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -383,9 +380,8 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            Opt for BANT Leads to maximize success. Choose BANT
+                            Leads for targeted success.
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -411,9 +407,8 @@ export default function Home() {
                         </div>
                         <div className="content">
                           <p className="secound-para-at-animated-serivece">
-                            Unlock revenue potential by captivating and
-                            converting high-value accounts with personalized
-                            marketing strategies.
+                            Amplify Your Business Reach.Choose Email Marketing
+                            for cost-effective, measurable.
                           </p>
                           <p>
                             <Link href="/Contactus">
@@ -485,20 +480,24 @@ export default function Home() {
                   support
                 </h2>
                 <p className="para-for-support-section-at-ssnm">
-                  We’re here to help. If you need a hand <br />
+                  {/* We’re here to help. If you need a hand <br />
                   switching from your current solution, have
                   <br />
                   questions about why Demandscoop is right for your business, or
                   want support getting started,
                   <br />
                   please talk to a member of our team.
-                  <br />
+                  <br /> */}
+                  Seamless B2B support for your success. Personalized
+                  assistance, timely resolutions, and dedicated expertise.
+                  Partner with us for confident and efficient business
+                  operations.
                 </p>
                 <p className="display-at-mobile-section-only-in-sbjfs">
-                  We’re here to help. If you need a hand. switching from your
-                  current solution, have questions about why Demandscoop is
-                  right for your business, or want support getting started,
-                  please talk to a member of our team.
+                  Seamless B2B support for your success. Personalized
+                  assistance, timely resolutions, and dedicated expertise.
+                  Partner with us for confident and efficient business
+                  operations.
                 </p>
                 <Link href="/Contactus">
                   <button
@@ -525,7 +524,8 @@ export default function Home() {
                 onClick={() => setFaq1(!faq1)}
               >
                 <p className="white-txt-at-faq-sect">
-                  Does Demandscoop have tools for complex businesses?
+                  What is Demand Generation, and how can it benefit my B2B
+                  business?
                 </p>
                 {faq1 ? (
                   <p className="white-txt-at-faq-sect extralarge-font">-</p>
@@ -535,13 +535,11 @@ export default function Home() {
               </div>
               {faq1 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Demandscoop has solutions for businesses of all sizes. Our
-                  connected tools are built to scale with future-focused,
-                  connected tools. Enhanced, customer-friendly experiences help
-                  build deeper data and better customer relationships. And our
-                  open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Demandscoop
-                  works with larger, more complex businesses.
+                  Demand generation is a marketing strategy aimed at creating
+                  awareness and interest in your products or services among
+                  potential B2B customers. It involves various tactics like
+                  content marketing, email campaigns, social media, and SEO to
+                  attract leads and drive them through the sales funnel.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -550,7 +548,8 @@ export default function Home() {
                 onClick={() => setFaq2(!faq2)}
               >
                 <p className="white-txt-at-faq-sect">
-                  How does buy now, pay later work?
+                  How can Sales Development Services enhance my B2B lead
+                  generation efforts?
                 </p>
                 {faq2 ? (
                   <p className="white-txt-at-faq-sect extralarge-font">-</p>
@@ -560,13 +559,11 @@ export default function Home() {
               </div>
               {faq2 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Demandscoop has solutions for businesses of all sizes. Our
-                  connected tools are built to scale with future-focused,
-                  connected tools. Enhanced, customer-friendly experiences help
-                  build deeper data and better customer relationships. And our
-                  open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Demandscoop
-                  works with larger, more complex businesses.
+                  Sales Development Services focus on identifying and qualifying
+                  potential leads through outbound prospecting and personalized
+                  communication. These services help in warming up prospects,
+                  understanding their needs, and setting appointments for your
+                  sales team to close deals more effectively.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -575,7 +572,8 @@ export default function Home() {
                 onClick={() => setFaq3(!faq3)}
               >
                 <p className="white-txt-at-faq-sect">
-                  What are merchant services?
+                  What are Database Services in the context of B2B marketing,
+                  and why are they essential?
                 </p>
                 {faq3 ? (
                   <p className="white-txt-at-faq-sect extralarge-font">-</p>
@@ -585,13 +583,11 @@ export default function Home() {
               </div>
               {faq3 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Demandscoop has solutions for businesses of all sizes. Our
-                  connected tools are built to scale with future-focused,
-                  connected tools. Enhanced, customer-friendly experiences help
-                  build deeper data and better customer relationships. And our
-                  open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Demandscoop
-                  works with larger, more complex businesses.
+                  Database services involve maintaining and updating a clean,
+                  accurate, and up-to-date database of potential B2B customers
+                  and leads. This database is crucial for targeted marketing
+                  campaigns, personalized communications, and effective lead
+                  nurturing, ultimately improving your conversion rates and ROI.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -600,8 +596,8 @@ export default function Home() {
                 onClick={() => setFaq4(!faq4)}
               >
                 <p className="white-txt-at-faq-sect">
-                  How does Demandscoop compare to other business software
-                  providers?
+                  How can Digital Marketing benefit my B2B business, and what
+                  specific strategies are employed in this field?
                 </p>
                 {faq4 ? (
                   <p className="white-txt-at-faq-sect extralarge-font">-</p>
@@ -611,13 +607,13 @@ export default function Home() {
               </div>
               {faq4 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Demandscoop has solutions for businesses of all sizes. Our
-                  connected tools are built to scale with future-focused,
-                  connected tools. Enhanced, customer-friendly experiences help
-                  build deeper data and better customer relationships. And our
-                  open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Demandscoop
-                  works with larger, more complex businesses.
+                  Digital marketing encompasses various online marketing
+                  strategies like search engine optimization (SEO), content
+                  marketing, pay-per-click (PPC) advertising, social media
+                  marketing, email marketing, and more. These strategies help
+                  B2B businesses reach their target audience, generate leads,
+                  and increase brand visibility and credibility in the digital
+                  space.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -626,8 +622,8 @@ export default function Home() {
                 onClick={() => setFaq5(!faq5)}
               >
                 <p className="white-txt-at-faq-sect">
-                  Does Demandscoop have tools for professional services
-                  businesses?
+                  What metrics should I track to measure the effectiveness of my
+                  B2B marketing and sales efforts?
                 </p>
                 {faq5 ? (
                   <p className="white-txt-at-faq-sect extralarge-font">-</p>
@@ -637,13 +633,14 @@ export default function Home() {
               </div>
               {faq5 ? (
                 <p className="faq-answer-at-faq-sectionsk">
-                  Demandscoop has solutions for businesses of all sizes. Our
-                  connected tools are built to scale with future-focused,
-                  connected tools. Enhanced, customer-friendly experiences help
-                  build deeper data and better customer relationships. And our
-                  open platform means you can connect to prebuilt integrations
-                  or build out your own with our APIs. Learn how Demandscoop
-                  works with larger, more complex businesses.
+                  To gauge the success of your B2B marketing and sales
+                  campaigns, track metrics such as lead conversion rate,
+                  customer acquisition cost (CAC), customer lifetime value
+                  (CLV), return on investment (ROI), click-through rates (CTR),
+                  website traffic, and engagement on various digital channels.
+                  These metrics provide valuable insights into the performance
+                  and efficiency of your marketing strategies and help in making
+                  data-driven decisions.
                 </p>
               ) : null}
               <div className="cntr-btwn-lines-at-faq-sec"></div>
@@ -695,3 +692,11 @@ export default function Home() {
 </p>
 </div> */
 }
+
+// In the fast-paced world of B2B,
+// our dedicated support team is here to ensure your business
+// never misses a beat. With a deep understanding of your unique
+//  needs, we offer timely and personalized assistance, resolving
+//  challenges swiftly. From technical queries to account management,
+//   we've got you covered. Partner with us and experience seamless support,
+// empowering your B2B endeavors with confidence and success.

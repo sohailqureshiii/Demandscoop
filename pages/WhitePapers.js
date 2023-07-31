@@ -6,31 +6,36 @@ import Link from "next/link";
 import React from "react";
 import WhitePaperImg from "../public/whitepapers.png";
 import localFont from "next/font/local";
+
 const myFont = localFont({ src: "../Fonts/Montserrat-Medium.ttf" });
+// import WhitePaperOne from "../WhitePaperspdf/testwhitepaper.pdf";
 const WhitePapers = () => {
   const WhitePaper = () => {
     return (
       <>
-        <div className="conatainers-for-white-papers-at-section">
-          <div className="inside-container-at-white-paper-section">
-            <Image
-              src={WhitePaperImg}
-              width={"100%"}
-              height={428}
-              alt="Picture of the author"
-            />{" "}
+        <a href="testwhitepaper.pdf" download={"testwhitepaper.pdf"}>
+          <div className="conatainers-for-white-papers-at-section">
+            <div className="inside-container-at-white-paper-section">
+              <Image
+                src={WhitePaperImg}
+                width={"100%"}
+                height={428}
+                alt="Picture of the author"
+              />{" "}
+            </div>
+            <h3 className="hedr-at-white-paper-cnt">
+              Guide To Better Tco And Agility With Hyper Converged
+              Infrastructure
+            </h3>
+            <p className="para-at-white-paper-cnt">
+              It’s not easy being today’s CIO. As employees bring growing
+              numbers of their own computing devices to work, CIOs are faced
+              with a tough choice. They must either figure out a secure way to
+              allow employees to conduct business on their own devices —no easy
+              job—or they must simply say no.
+            </p>
           </div>
-          <h3 className="hedr-at-white-paper-cnt">
-            Guide To Better Tco And Agility With Hyper Converged Infrastructure
-          </h3>
-          <p className="para-at-white-paper-cnt">
-            It’s not easy being today’s CIO. As employees bring growing numbers
-            of their own computing devices to work, CIOs are faced with a tough
-            choice. They must either figure out a secure way to allow employees
-            to conduct business on their own devices —no easy job—or they must
-            simply say no.
-          </p>
-        </div>
+        </a>
       </>
     );
   };
@@ -45,12 +50,12 @@ const WhitePapers = () => {
                 B2B Whitepapers
               </h1>
               <p className="para-at-contact-us-screen-layout">
-                Generating appointments are never easy. We achieved the end goal
-                by adopting multiple strategies.
-                <br />
-                Our experienced appointment setting experts comprehend the
-                triggers that produce quality leads and meetings that your sales
-                team will acknowledge and close.
+                Our B2B Whitepapers offer valuable insights, addressing industry
+                challenges and emerging trends. Crafted with thorough research
+                and expertise, they empower decision-makers to drive business
+                growth. Unlock a wealth of knowledge to stay ahead, navigate
+                complexities, and seize opportunities in the dynamic B2B
+                landscape.
               </p>
 
               <Link href="/Contactus">

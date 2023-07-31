@@ -15,11 +15,11 @@ const HomeNavabr = () => {
     <>
       <div className="background-for-home-navigationbar">
         <div className="layout-box-fr-navigation-sub-bx">
-          <div className="layout-box-fr-logo-in-jdwla">
-            <Link href="/">
+          <Link href="/">
+            <div className="layout-box-fr-logo-in-jdwla">
               <Image src={MainLogo} width={"100%"} height={65} />
-            </Link>
-          </div>
+            </div>{" "}
+          </Link>
           <ul className="ul-list-for-navtion-at-home-screen-ajk">
             <li
               className={
@@ -40,7 +40,7 @@ const HomeNavabr = () => {
               <Link href="/About"> Why Us</Link>
             </li>
             <li className="Inactive-nav-tabs-links-at-Homescreen">
-              <DropdownMenu menu={<Link href="/Service">Services</Link>}>
+              <DropdownMenu menu={<Link href="">Services</Link>}>
                 <div className="internal-box-for-drop-down-in-navbar">
                   <div>
                     <h5 className="header-at-drp-dwn-at-navbar">
