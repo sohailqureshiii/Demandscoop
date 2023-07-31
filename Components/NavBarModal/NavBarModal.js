@@ -67,22 +67,22 @@ const NavModal = (props) => {
               >
                 Demand Generation
               </p>
-              <Link href="/Service">
+              <Link href="/service/account-based-marketing">
                 <p className="list-of-under-services-at-dropdwn">
                   Account Based Marketing
                 </p>
               </Link>
-              <Link href="/Service">
+              <Link href="/service/content-marketing">
                 <p className="list-of-under-services-at-dropdwn">
                   Content Marketing
                 </p>
               </Link>
-              <Link href="/Service">
+              <Link href="/service/event-promotion">
                 <p className="list-of-under-services-at-dropdwn">
                   Event Promotion
                 </p>
               </Link>
-              <Link href="/Service">
+              <Link href="/service/marketing-qualified-lead">
                 <p className="list-of-under-services-at-dropdwn">
                   Marketing Qualified Lead (MQL)
                 </p>
@@ -91,20 +91,20 @@ const NavModal = (props) => {
                 <p className="header-at-drp-dwn-at-navbar white-clroisj">
                   Sales Development
                 </p>
-                <Link href="/Service">
+                <Link href="/service/appointment-generation">
                   <p className="list-of-under-services-at-dropdwn">
                     Appointment Generation
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/bant-lead">
                   <p className="list-of-under-services-at-dropdwn">BANT Lead</p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/confirmed-call-back">
                   <p className="list-of-under-services-at-dropdwn">
                     Confirmed Call Back
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/sales-qualified-lead">
                   <p className="list-of-under-services-at-dropdwn">
                     Sales Qualified Lead
                   </p>
@@ -114,17 +114,17 @@ const NavModal = (props) => {
                 <p className="header-at-drp-dwn-at-navbar white-clroisj">
                   Database Services
                 </p>
-                <Link href="/Service">
+                <Link href="/service/b2b-list-building">
                   <p className="list-of-under-services-at-dropdwn">
                     B2B List Building
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/database-cleansing">
                   <p className="list-of-under-services-at-dropdwn">
                     Database Cleansing
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/install-database">
                   <p className="list-of-under-services-at-dropdwn">
                     Install Database
                   </p>
@@ -134,17 +134,17 @@ const NavModal = (props) => {
                 <h5 className="header-at-drp-dwn-at-navbar white-clroisj">
                   Digital Marketing
                 </h5>
-                <Link href="/Service">
+                <Link href="/service/email-marketing">
                   <p className="list-of-under-services-at-dropdwn">
                     Email Marketing
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/market-research">
                   <p className="list-of-under-services-at-dropdwn">
                     Market Research
                   </p>
                 </Link>
-                <Link href="/Service">
+                <Link href="/service/seo-services">
                   <p className="list-of-under-services-at-dropdwn">
                     SEO Services
                   </p>
