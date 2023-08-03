@@ -48,11 +48,12 @@ export default function Home() {
 
         className="main-without--backfround"
       >
+        {" "}
+        <HomeNavabr />
         <div
           //  className="background-litj-bl-in-front"
           className="main-without--backfround"
         >
-          <HomeNavabr />
           <div className="displayflexat-ns ">
             <div className="header-layout-at-main-section">
               <h1
@@ -150,7 +151,6 @@ export default function Home() {
             </div>
           </div> */}
         </div>
-
         <>
           <AboutSection />
         </>
@@ -511,7 +511,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div className="black-section-for-foorter-at-bottom">
           <div>
             <div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import MainLogo from "../../public/DemandscoopMain-logo.png";
+import MainLogo from "../../public/demandscooplogonewnew.png";
 import Hamburger from "../../public/hamburgerig.png";
 import NavModal from "../NavBarModal/NavBarModal";
 import DropdownMenu from "../DropdownService/DropdownService";
@@ -17,7 +17,7 @@ const HomeNavabr = () => {
         <div className="layout-box-fr-navigation-sub-bx">
           <Link href="/">
             <div className="layout-box-fr-logo-in-jdwla">
-              <Image src={MainLogo} width={"100%"} height={65} />
+              <Image src={MainLogo} width={"100%"} height={50} />
             </div>{" "}
           </Link>
           <ul className="ul-list-for-navtion-at-home-screen-ajk">
