@@ -155,7 +155,7 @@ const Footer = () => {
                 height={10}
                 alt="Picture of the author"
               />
-              <p>+91 9725452141</p>
+              <p>+91 97305 58065</p>
             </div>
             <div className="flx-in-wirsikd-djk">
               <p>Resource Hiring:</p>
@@ -165,7 +165,7 @@ const Footer = () => {
                 height={10}
                 alt="Picture of the author"
               />
-              <p>+91 9725452141</p>
+              <p>+91 973055 8065</p>
             </div>
             <div className="flx-in-wirsikd-djk">
               <p>Bussiness Inquiry: </p>
@@ -175,7 +175,7 @@ const Footer = () => {
                 height={10}
                 alt="Picture of the author"
               />
-              <p>+91 9898490360</p>
+              <p>+91 80871 44552</p>
             </div>
           </div>
         </div>

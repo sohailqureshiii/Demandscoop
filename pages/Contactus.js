@@ -56,7 +56,7 @@ const Contactus = () => {
                 UK Address - Suite 10, 44-46 Elmwood ave, Belfast. 444 Elmwood
                 Ave,
                 <br />
-                Belfast, BT9 6AZ, United Kingdom Phone - 00442895438995
+                Belfast, BT9 6AZ, United Kingdom
               </p>
               <p className="para-for-address-in-contact-layout">
                 Singapore Address - 30 cecil st, Sigapore 049712
