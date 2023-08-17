@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Input } from "../Input/Input";
 import localFont from "next/font/local";
 import { sendContactForm } from "@/lib/api";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 const myFont = localFont({ src: "../../Fonts/Montserrat-Medium.ttf" });
 
 const ContactUsForm = () => {
@@ -19,18 +23,19 @@ const ContactUsForm = () => {
       phoneNumber,
       jobTitle,
     };
-    console.log("asdasdasd", values);
 
     try {
       await sendContactForm(values);
 
-      // setState(initState);
-      // toast({
-      //   title: "Message sent.",
-      //   status: "success",
-      //   duration: 2000,
-      //   position: "top",
-      // });
+      toast.success("Your message has been sent successfully!", {
+        position: "top-right",
+        autoClose: 2000, // Time in milliseconds
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     } catch (error) {
       console.log("error while submitting");
     }
@@ -110,6 +115,7 @@ const ContactUsForm = () => {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };
