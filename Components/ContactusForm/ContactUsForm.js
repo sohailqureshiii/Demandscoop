@@ -14,19 +14,47 @@ const ContactUsForm = () => {
   const [bussinessEmail, setBussinessEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [jobTitle, setJobTitle] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (e) => {
+    e.preventDefault();
+
+
+    // Validation checks
+    if (!fullName || fullName.trim().length < 5) {
+      toast.error("Please provide a full name with at least 5 words.");
+      return;
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(bussinessEmail)) {
+      toast.error("Please provide a valid business email.");
+      return;
+    }
+
+    if (!/^\d{10}$/.test(phoneNumber)) {
+      toast.error("Please provide a valid 10-digit phone number.");
+      return;
+    }
+
+    if (!jobTitle) {
+      toast.error("Please provide a job title.");
+      return;
+    }
+
+    setIsLoading(true);
+
     const values = {
-      // message,
       fullName,
       bussinessEmail,
       phoneNumber,
       jobTitle,
     };
 
+
+
     try {
       await sendContactForm(values);
-
+      setIsLoading(false);
       toast.success("Your message has been sent successfully!", {
         position: "top-right",
         autoClose: 2000, // Time in milliseconds
@@ -37,7 +65,17 @@ const ContactUsForm = () => {
         progress: undefined,
       });
     } catch (error) {
-      console.log("error while submitting");
+      setIsLoading(false);
+      toast.error("An error occurred. Please try again later.", {
+        position: "top-right",
+        autoClose: 2000, // Time in milliseconds
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+
     }
   };
 
@@ -106,8 +144,15 @@ const ContactUsForm = () => {
             onClick={(e) => {
               onSubmit(e);
             }}
+            disabled={isLoading}
           >
-            Submit
+            {isLoading ? (
+              <div className="loading-spinner-container">
+                <div className="loading-spinner"></div>
+              </div>
+            ) : (
+              'Submit'
+            )}
           </button>
           <p className="terms-and-privacy-text-ahdjsn">
             By submitting this form, you are agreeing to Demandscoop's
